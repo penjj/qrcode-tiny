@@ -1,0 +1,8 @@
+{
+  "extends": "@penjj/tsconfig",
+  "compilerOptions": {
+    "lib": ["DOM", "ESNext", "DOM.Iterable"],
+    "types": ["vite/client"]
+  },
+  "include": ["index.ts", "App.vue"]
+}

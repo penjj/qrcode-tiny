@@ -1,0 +1,14 @@
+{
+  "name": "@qrcode-tiny/vue",
+  "type": "module",
+  "version": "0.0.0-alpha.1",
+  "main": "src/index.ts",
+  "module": "src/index.ts",
+  "peerDependencies": {
+    "vue": ">=3"
+  },
+  "dependencies": {
+    "qrcode-tiny": "workspace:*",
+    "vue": "^3.4.4"
+  }
+}

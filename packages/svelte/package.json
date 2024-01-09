@@ -1,0 +1,16 @@
+{
+  "name": "@qrcode-tiny/svelte",
+  "type": "module",
+  "version": "0.0.0-alpha.0",
+  "main": "./src/index.ts",
+  "module": "./src/index.ts",
+  "types": "./src/index.ts",
+  "files": ["src"],
+  "peerDependencies": {
+    "svelte": ">=4"
+  },
+  "dependencies": {
+    "qrcode-tiny": "workspace:*",
+    "svelte": "^4.2.8"
+  }
+}

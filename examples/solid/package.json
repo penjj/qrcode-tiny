@@ -1,0 +1,16 @@
+{
+  "name": "@qrcode-tiny/example-solid",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "@qrcode-tiny/solid": "workspace:*",
+    "solid-js": "^1.8.8"
+  },
+  "devDependencies": {
+    "vite": "^5.0.10",
+    "vite-plugin-solid": "^2.8.0"
+  }
+}

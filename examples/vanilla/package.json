@@ -1,0 +1,14 @@
+{
+  "name": "@qrcode-tiny/example-vanilla",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "qrcode-tiny": "workspace:*"
+  },
+  "devDependencies": {
+    "vite": "^5.0.10"
+  }
+}

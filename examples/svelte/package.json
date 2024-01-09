@@ -1,0 +1,16 @@
+{
+  "name": "@qrcode-tiny/example-svelte",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "@qrcode-tiny/svelte": "workspace:*",
+    "svelte": "^4.2.8"
+  },
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^3.0.1",
+    "vite": "^5.0.10"
+  }
+}

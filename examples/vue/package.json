@@ -1,0 +1,16 @@
+{
+  "name": "@qrcode-tiny/example-vue",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "@qrcode-tiny/vue": "workspace:*",
+    "vue": "^3.4.7"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.2",
+    "vite": "^5.0.10"
+  }
+}

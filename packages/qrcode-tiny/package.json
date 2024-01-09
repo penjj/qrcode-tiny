@@ -1,0 +1,28 @@
+{
+  "name": "qrcode-tiny",
+  "type": "module",
+  "version": "0.0.0-beta.1",
+  "sideEffect": false,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    },
+    "./worker": {
+      "types": "./dist/worker.d.ts",
+      "import": "./dist/worker.mjs"
+    }
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "stub": "unbuild --stub",
+    "build": "unbuild",
+    "size": "export-size ."
+  },
+  "devDependencies": {
+    "export-size": "^0.7.0"
+  }
+}

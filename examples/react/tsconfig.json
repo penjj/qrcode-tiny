@@ -1,0 +1,10 @@
+{
+  "extends": "@penjj/tsconfig",
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "jsxImportSource": "react",
+    "lib": ["DOM", "ESNext", "DOM.Iterable"],
+    "types": ["vite/client"]
+  },
+  "include": ["index.tsx"]
+}

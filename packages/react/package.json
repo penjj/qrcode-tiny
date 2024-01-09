@@ -1,0 +1,17 @@
+{
+  "name": "@qrcode-tiny/react",
+  "type": "module",
+  "version": "0.0.0-alpha.0",
+  "main": "./src/index.js",
+  "module": "./src/index.js",
+  "peerDependencies": {
+    "react": ">=17"
+  },
+  "dependencies": {
+    "qrcode-tiny": "workspace:*",
+    "react": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.46"
+  }
+}
