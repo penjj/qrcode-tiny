@@ -2,6 +2,7 @@
   "name": "@qrcode-tiny/vue",
   "type": "module",
   "version": "0.0.0-alpha.1",
+  "license": "MIT",
   "main": "src/index.ts",
   "module": "src/index.ts",
   "peerDependencies": {

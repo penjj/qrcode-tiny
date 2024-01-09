@@ -2,6 +2,7 @@
   "name": "@qrcode-tiny/solid",
   "type": "module",
   "version": "0.0.0-alpha.0",
+  "license": "MIT",
   "main": "src/index.jsx",
   "module": "src/index.jsx",
   "files": ["src"],

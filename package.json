@@ -2,6 +2,7 @@
   "name": "@qrcode-tiny/monorepo",
   "type": "module",
   "packageManager": "pnpm@8.14.0",
+  "license": "MIT",
   "scripts": {
     "lint": "eslint .",
     "release": ""
