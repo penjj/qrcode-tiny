@@ -1,12 +1,14 @@
 {
   "name": "@qrcode-tiny/svelte",
   "type": "module",
-  "version": "0.0.0-alpha.0",
+  "version": "0.0.0-beta.1",
   "license": "MIT",
   "main": "./src/index.ts",
   "module": "./src/index.ts",
   "types": "./src/index.ts",
-  "files": ["src"],
+  "files": [
+    "src"
+  ],
   "peerDependencies": {
     "svelte": ">=4"
   },

@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "lint": "eslint .",
-    "release": ""
+    "release": "bumpp -r"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^2.6.1",
@@ -17,5 +17,6 @@
     "typescript": "^5.3.3",
     "unbuild": "^2.0.0",
     "vitest": "^1.1.1"
-  }
+  },
+  "version": "0.0.0-beta.1"
 }

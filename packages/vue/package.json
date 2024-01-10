@@ -1,10 +1,17 @@
 {
   "name": "@qrcode-tiny/vue",
   "type": "module",
-  "version": "0.0.0-alpha.1",
+  "version": "0.0.0-beta.1",
   "license": "MIT",
-  "main": "src/index.ts",
-  "module": "src/index.ts",
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "unbuild"
+  },
   "peerDependencies": {
     "vue": ">=3"
   },

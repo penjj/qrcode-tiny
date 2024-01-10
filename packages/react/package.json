@@ -1,10 +1,17 @@
 {
   "name": "@qrcode-tiny/react",
   "type": "module",
-  "version": "0.0.0-alpha.0",
+  "version": "0.0.0-beta.1",
   "license": "MIT",
-  "main": "./src/index.js",
-  "module": "./src/index.js",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "unbuild"
+  },
   "peerDependencies": {
     "react": ">=17"
   },
