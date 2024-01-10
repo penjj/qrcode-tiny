@@ -4,6 +4,9 @@
   "version": "0.0.0-beta.1",
   "license": "MIT",
   "sideEffect": false,
+  "publishConfig": {
+    "access": "public"
+  },
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
@@ -18,6 +21,7 @@
   "main": "./dist/index.cjs",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
+  "files": ["dist"],
   "scripts": {
     "stub": "unbuild --stub",
     "build": "unbuild",

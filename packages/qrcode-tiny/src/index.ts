@@ -18,6 +18,10 @@ export interface InlineConfig {
   dark?: string
 }
 
+export type {
+  Ecc,
+}
+
 export function createQrCode(text: string, ecc = EccHigh, option: any) {
   const modules = encodeText(text, ecc)
   return draw(modules, option)

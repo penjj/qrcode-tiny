@@ -1,6 +1,6 @@
 import type { PropType } from 'vue'
 import { defineComponent, h, ref, watch } from 'vue'
-import type { InlineConfig } from 'qrcode-tiny'
+import type { Ecc } from 'qrcode-tiny'
 import { createQrCode } from 'qrcode-tiny'
 
 export const QrCode = defineComponent(
@@ -11,7 +11,7 @@ export const QrCode = defineComponent(
         required: true,
       },
       ecc: {
-        type: Object as PropType<InlineConfig['ecc']>,
+        type: Object as PropType<Ecc>,
       },
       width: {
         type: Number,
@@ -30,7 +30,6 @@ export const QrCode = defineComponent(
       const src = ref<string>()
 
       watch(props, async ({ text, ecc, ...option }) => {
-        console.log(text, ecc, option)
         src.value = await createQrCode(text, ecc, option)
       }, {
         immediate: true,

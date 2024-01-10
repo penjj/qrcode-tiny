@@ -1,7 +1,11 @@
 {
   "name": "@qrcode-tiny/example-vanilla",
   "type": "module",
+  "private": true,
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build"

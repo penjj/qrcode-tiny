@@ -3,8 +3,12 @@
   "type": "module",
   "version": "0.0.0-beta.1",
   "license": "MIT",
-  "main": "src/index.jsx",
-  "module": "src/index.jsx",
+  "main": "src/index.tsx",
+  "module": "src/index.tsx",
+  "types": "src/index.tsx",
+  "publishConfig": {
+    "access": "public"
+  },
   "files": [
     "src"
   ],
