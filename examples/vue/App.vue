@@ -3,5 +3,5 @@
 </template>
 
 <script setup lang="ts">
-import { QrCode } from '@qrcode-tiny/vue'
+import QrCode from '@qrcode-tiny/vue'
 </script>

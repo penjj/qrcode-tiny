@@ -1,6 +1,6 @@
 import { type Ecc, EccHigh } from './core/constants'
 import { draw } from './core/draw'
-import { encodeText } from './core/qrcode'
+import { encodeText } from './core/test'
 
 export {
   EccHigh,

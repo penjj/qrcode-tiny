@@ -1,5 +1,5 @@
 import { render } from 'solid-js/web'
-import { QrCode } from '@qrcode-tiny/solid'
+import QrCode from '@qrcode-tiny/solid'
 import type { Component } from 'solid-js'
 
 const App: Component = () => (

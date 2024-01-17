@@ -1,7 +1,7 @@
 import { type VoidComponent, createEffect, createSignal, onCleanup } from 'solid-js'
 import { type InlineConfig, createQrCode } from 'qrcode-tiny'
 
-export const QrCode: VoidComponent<InlineConfig> = ({
+const QrCode: VoidComponent<InlineConfig> = ({
   text,
   ecc,
   ...option
@@ -24,3 +24,5 @@ export const QrCode: VoidComponent<InlineConfig> = ({
 
   return <img src={src()} alt="Scan me" />
 }
+
+export default QrCode

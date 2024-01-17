@@ -3,9 +3,9 @@
   "type": "module",
   "version": "0.0.0-beta.1",
   "license": "MIT",
-  "main": "dist/index.cjs",
-  "module": "dist/index.mjs",
-  "types": "dist/index.d.ts",
+  "main": "dist/index.vue",
+  "module": "dist/index.vue",
+  "types": "dist/index.vue",
   "files": [
     "dist"
   ],
@@ -13,7 +13,8 @@
     "access": "public"
   },
   "scripts": {
-    "build": "unbuild"
+    "build": "unbuild",
+    "size": "size-limit ."
   },
   "peerDependencies": {
     "vue": ">=3"

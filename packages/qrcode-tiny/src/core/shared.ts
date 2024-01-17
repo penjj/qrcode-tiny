@@ -12,3 +12,8 @@ export const {
   ceil,
   round,
 } = Math
+
+export const {
+  parseInt,
+  POSITIVE_INFINITY,
+} = Number

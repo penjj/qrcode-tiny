@@ -1,4 +1,4 @@
-import { QrCode } from '@qrcode-tiny/react'
+import QrCode from '@qrcode-tiny/react'
 import { createRoot } from 'react-dom/client'
 
 createRoot(document.getElementById('app')!)

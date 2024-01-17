@@ -5,7 +5,8 @@
   "license": "MIT",
   "sideEffect": false,
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "devDependencies": {}
   },
   "exports": {
     ".": {
@@ -21,13 +22,11 @@
   "main": "./dist/index.cjs",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "stub": "unbuild --stub",
-    "build": "unbuild",
-    "size": "export-size ."
-  },
-  "devDependencies": {
-    "export-size": "^0.7.0"
+    "build": "unbuild"
   }
 }
