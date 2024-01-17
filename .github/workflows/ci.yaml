@@ -1,0 +1,26 @@
+name: CI
+on:
+  pull_request:
+    branches:
+      - develop
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - name: Set node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18.x
+
+      - name: Setup
+        run: corepack enable
+
+      - name: Install
+        run: pnpm i
+
+      - name: Test
+        run: pnpm test
