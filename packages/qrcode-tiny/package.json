@@ -2,8 +2,14 @@
   "name": "qrcode-tiny",
   "type": "module",
   "version": "0.0.0-beta.1",
+  "author": "penjj <peng.j.1995@gmail.com>",
   "license": "MIT",
   "sideEffect": false,
+  "homepage": "https://github.com/penjj/qrcode-tiny",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/penjj/qrcode-tiny.git"
+  },
   "publishConfig": {
     "access": "public",
     "devDependencies": {}
@@ -19,9 +25,6 @@
       "import": "./dist/worker.mjs"
     }
   },
-  "main": "./dist/index.cjs",
-  "module": "./dist/index.mjs",
-  "types": "./dist/index.d.ts",
   "files": [
     "dist"
   ],
