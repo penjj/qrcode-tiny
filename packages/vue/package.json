@@ -32,6 +32,6 @@
   },
   "dependencies": {
     "qrcode-tiny": "workspace:*",
-    "vue": "^3.4.4"
+    "vue": "^3.4.33"
   }
 }

@@ -11,10 +11,10 @@
   },
   "dependencies": {
     "@qrcode-tiny/solid": "workspace:*",
-    "solid-js": "^1.8.8"
+    "solid-js": "^1.8.18"
   },
   "devDependencies": {
-    "vite": "^5.0.10",
-    "vite-plugin-solid": "^2.8.0"
+    "vite": "^5.3.4",
+    "vite-plugin-solid": "^2.10.2"
   }
 }
