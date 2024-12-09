@@ -1,6 +1,6 @@
 import { expect, it } from 'vitest'
-import { encodeText } from './qrcode'
 import { EccHigh, EccLow, EccMedium, EccQuartile } from './constants'
+import { encodeText } from './qrcode'
 
 it('should match snapshot', () => {
   expect(encodeText('Hello 你好', EccHigh)).toMatchSnapshot()

@@ -4,20 +4,20 @@
   "private": true,
   "license": "MIT",
   "publishConfig": {
-    "access": "public"
+    "access": "restricted"
   },
   "scripts": {
     "dev": "vite"
   },
   "dependencies": {
     "@qrcode-tiny/react": "workspace:*",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
   },
   "devDependencies": {
-    "@types/react": "^18.2.47",
-    "@types/react-dom": "^18.0.11",
-    "@vitejs/plugin-react": "^4.2.1",
-    "vite": "^5.0.10"
+    "@types/react": "^19.0.1",
+    "@types/react-dom": "^19.0.1",
+    "@vitejs/plugin-react": "^4.3.4",
+    "vite": "catalog:"
   }
 }

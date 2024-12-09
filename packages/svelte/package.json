@@ -5,10 +5,10 @@
   "author": "penjj <peng.j.1995@gmail.com>",
   "license": "MIT",
   "sideEffect": false,
-  "homepage": "https://github.com/penjj/qrcode-tiny",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/penjj/qrcode-tiny.git"
+    "url": "git+https://github.com/penjj/qrcode-tiny.git",
+    "directory": "packages/svelte"
   },
   "main": "src/index.svelte",
   "module": "src/index.svelte",
@@ -24,6 +24,6 @@
   },
   "dependencies": {
     "qrcode-tiny": "workspace:*",
-    "svelte": "^4.2.8"
+    "svelte": "^5.9.0"
   }
 }

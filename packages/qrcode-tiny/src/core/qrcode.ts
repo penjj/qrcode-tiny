@@ -2,6 +2,12 @@
  * These codes are refactored from qr-code-generator-ts and come with an license
  */
 
+import type { QrSegment } from './segment.ts'
+import type {
+  bit,
+  byte,
+  int,
+} from './shared.ts'
 /*
  * QR Code generator library (TypeScript)
  *
@@ -37,15 +43,8 @@ import {
   PENALTY_N4,
 } from './constants.ts'
 import { ByteMode } from './mode.ts'
-import type { QrSegment } from './segment.ts'
 import { createSegment } from './segment.ts'
-import type {
-  bit,
-  byte,
-  int,
-} from './shared.ts'
 import {
-  POSITIVE_INFINITY,
   _RangeError,
   abs,
   ceil,
@@ -53,6 +52,7 @@ import {
   max,
   min,
   parseInt,
+  POSITIVE_INFINITY,
 } from './shared.ts'
 import { appendBits, assert, getBit } from './utils.ts'
 
@@ -121,8 +121,9 @@ export function encodeSegments(
     )
     || mask < -1
     || mask > 7
-  )
+  ) {
     throw new _RangeError('Invalid value')
+  }
 
   // Find the minimal version number to use
   let version: int
@@ -351,8 +352,9 @@ export function createQrCode(version: int, ecc: Ecc, dataCodewords: byte[], msk:
             || (i === 0 && j === numAlign - 1)
             || (i === numAlign - 1 && j === 0)
           )
-        )
+        ) {
           drawAlignmentPattern(alignPatPos[i], alignPatPos[j])
+        }
       }
     }
 
@@ -622,8 +624,9 @@ export function createQrCode(version: int, ecc: Ecc, dataCodewords: byte[], msk:
           color === context.modules[y][x + 1]
           && color === context.modules[y + 1][x]
           && color === context.modules[y + 1][x + 1]
-        )
+        ) {
           result += PENALTY_N2
+        }
       }
     }
 

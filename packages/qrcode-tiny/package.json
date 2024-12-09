@@ -5,10 +5,10 @@
   "author": "penjj <peng.j.1995@gmail.com>",
   "license": "MIT",
   "sideEffect": false,
-  "homepage": "https://github.com/penjj/qrcode-tiny",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/penjj/qrcode-tiny.git"
+    "url": "git+https://github.com/penjj/qrcode-tiny.git",
+    "directory": "packages/core"
   },
   "publishConfig": {
     "access": "public",

@@ -3,23 +3,25 @@
   "type": "module",
   "version": "0.0.1-beta.0",
   "private": true,
-  "packageManager": "pnpm@8.14.0",
+  "packageManager": "pnpm@9.5.0",
   "license": "MIT",
   "scripts": {
-    "lint": "eslint .",
+    "lint": "eslint --flag unstable_ts_config .",
+    "lint:fix": "pnpm lint --fix",
     "test": "vitest",
     "release": "bumpp -r",
-    "size": "size-limit ."
+    "size": "size-limit .",
+    "prepare": "pnpm -r stub"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^2.6.1",
-    "@penjj/tsconfig": "^0.3.7",
-    "bumpp": "^9.2.1",
-    "eslint": "^8.56.0",
-    "eslint-plugin-format": "^0.1.0",
-    "happy-dom": "^13.1.4",
-    "typescript": "^5.3.3",
+    "@antfu/eslint-config": "^3.11.2",
+    "@penjj/tsconfig": "^0.5.1",
+    "bumpp": "^9.9.0",
+    "eslint": "^9.16.0",
+    "eslint-plugin-format": "^0.1.3",
+    "happy-dom": "^15.11.7",
+    "typescript": "^5.7.2",
     "unbuild": "^2.0.0",
-    "vitest": "^1.1.1"
+    "vitest": "^2.1.8"
   }
 }

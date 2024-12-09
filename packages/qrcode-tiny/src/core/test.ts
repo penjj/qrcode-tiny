@@ -1,9 +1,8 @@
-/* eslint-disable curly */
 import type { Ecc } from '..'
-import { EccHigh, EccMedium, EccQuartile, MAX_VERSION, MIN_VERSION, PENALTY_N1, PENALTY_N2, PENALTY_N3, PENALTY_N4 } from './constants.ts'
 import type { Mode } from './mode.ts'
+import { EccHigh, EccMedium, EccQuartile, MAX_VERSION, MIN_VERSION, PENALTY_N1, PENALTY_N2, PENALTY_N3, PENALTY_N4 } from './constants.ts'
 import { ByteMode } from './mode.ts'
-import { POSITIVE_INFINITY, _RangeError } from './shared.ts'
+import { _RangeError, POSITIVE_INFINITY } from './shared.ts'
 import { assert, getBit } from './utils.ts'
 
 const {
@@ -33,12 +32,14 @@ export function encodeText(text: string, ecc: Ecc) {
   while (chars.length) {
     const char = chars.shift()!
     const encoded = encodeURI(char)
-    if (encoded === char)
+    if (encoded === char) {
       bits.push(...toBytes(char.charCodeAt(0)))
-    else
+    }
+    else {
       encoded.split('%').filter(Boolean).forEach((v) => {
         bits.push(...toBytes(parseInt(v, 16)))
       })
+    }
   }
 
   return encodeSegments(createSegment(ByteMode, bits.length / 8, bits), ecc).modules
@@ -233,8 +234,9 @@ export function createQrCode(version: number, ecc: Ecc, dataCodewords: number[],
             || (i === 0 && j === numAlign - 1)
             || (i === numAlign - 1 && j === 0)
           )
-        )
+        ) {
           drawAlignmentPattern(alignPatPos[i], alignPatPos[j])
+        }
       }
     }
 
@@ -504,8 +506,9 @@ export function createQrCode(version: number, ecc: Ecc, dataCodewords: number[],
           color === context.modules[y][x + 1]
           && color === context.modules[y + 1][x]
           && color === context.modules[y + 1][x + 1]
-        )
+        ) {
           result += PENALTY_N2
+        }
       }
     }
 

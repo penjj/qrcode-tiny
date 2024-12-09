@@ -5,10 +5,10 @@
   "author": "penjj <peng.j.1995@gmail.com>",
   "license": "MIT",
   "sideEffect": false,
-  "homepage": "https://github.com/penjj/qrcode-tiny",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/penjj/qrcode-tiny.git"
+    "url": "git+https://github.com/penjj/qrcode-tiny.git",
+    "directory": "packages/react"
   },
   "publishConfig": {
     "access": "public"
@@ -24,9 +24,9 @@
   },
   "dependencies": {
     "qrcode-tiny": "workspace:*",
-    "react": "^18.2.0"
+    "react": "^19.0.0"
   },
   "devDependencies": {
-    "@types/react": "^18.2.46"
+    "@types/react": "^19.0.1"
   }
 }

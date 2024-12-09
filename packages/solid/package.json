@@ -5,10 +5,10 @@
   "author": "penjj <peng.j.1995@gmail.com>",
   "license": "MIT",
   "sideEffect": false,
-  "homepage": "https://github.com/penjj/qrcode-tiny",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/penjj/qrcode-tiny.git"
+    "url": "git+https://github.com/penjj/qrcode-tiny.git",
+    "directory": "packages/solid"
   },
   "main": "src/index.tsx",
   "module": "src/index.tsx",
@@ -24,6 +24,6 @@
   },
   "dependencies": {
     "qrcode-tiny": "workspace:*",
-    "solid-js": "^1.8.8"
+    "solid-js": "^1.9.3"
   }
 }

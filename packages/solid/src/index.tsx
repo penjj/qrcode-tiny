@@ -1,5 +1,5 @@
-import { type VoidComponent, createEffect, createSignal, onCleanup } from 'solid-js'
-import { type InlineConfig, createQrCode } from 'qrcode-tiny'
+import { createQrCode, type InlineConfig } from 'qrcode-tiny'
+import { createEffect, createSignal, onCleanup, type VoidComponent } from 'solid-js'
 
 const QrCode: VoidComponent<InlineConfig> = ({
   text,

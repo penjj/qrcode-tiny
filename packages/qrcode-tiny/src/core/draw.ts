@@ -1,39 +1,41 @@
 import { ceil, round } from './shared'
 
-const baseOption = {
-  width: 200,
-  height: 200,
+interface DrawOptions {
+  size?: number
+  dark?: string
+  light?: string
+}
+
+const baseOption: Required<DrawOptions> = {
+  size: 200,
   dark: '#000',
   light: '#fff',
 }
 
-export async function draw(modules: boolean[][], option: any) {
+export async function draw(modules: boolean[][], option: DrawOptions = {}) {
   const {
-    width,
-    height,
+    size,
     dark = baseOption.dark,
     light = baseOption.light,
   } = Object.assign({}, baseOption, option)
   const len = modules.length
-  const canvas = new OffscreenCanvas(width, height)
+  const canvas = new OffscreenCanvas(size, size)
   const context = canvas.getContext('2d')!
-  const itemWidth = width / len
-  const itemHeight = height / len
-  const roundedWidth = round(itemWidth)
-  const roundedHeight = round(itemHeight)
+  const itemSize = size / len
+  const roundedSize = round(itemSize)
   modules.forEach((row, rowIndex) => {
     row.forEach((isDark, colIndex) => {
       const colorStyle = isDark ? dark : light
-      const nLeft = colIndex * itemWidth
-      const nTop = rowIndex * itemHeight
+      const nLeft = colIndex * itemSize
+      const nTop = rowIndex * itemSize
       context.strokeStyle = colorStyle
       context.fillStyle = colorStyle
-      context.fillRect(nLeft, nTop, itemWidth, itemHeight)
+      context.fillRect(nLeft, nTop, itemSize, itemSize)
       context.strokeRect(
         ceil(nLeft) - 0.5,
         ceil(nTop) - 0.5,
-        roundedWidth,
-        roundedHeight,
+        roundedSize,
+        roundedSize,
       )
     })
   })

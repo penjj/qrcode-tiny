@@ -1,6 +1,6 @@
-import { type FC, createElement, useEffect, useState } from 'react'
 import type { InlineConfig } from 'qrcode-tiny'
 import { createQrCode } from 'qrcode-tiny'
+import { createElement, type FC, useEffect, useState } from 'react'
 
 const QrCode: FC<InlineConfig> = ({ text, ecc, ...option }) => {
   const [src, setSrc] = useState<string>()

@@ -1,7 +1,7 @@
-import type { PropType } from 'vue'
-import { defineComponent, h, ref, watch } from 'vue'
 import type { Ecc } from 'qrcode-tiny'
+import type { PropType } from 'vue'
 import { createQrCode } from 'qrcode-tiny'
+import { defineComponent, h, ref, watch } from 'vue'
 
 export default defineComponent({
   name: 'QrCodeTiny',

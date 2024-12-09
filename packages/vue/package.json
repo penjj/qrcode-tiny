@@ -5,10 +5,10 @@
   "author": "penjj <peng.j.1995@gmail.com>",
   "license": "MIT",
   "sideEffect": false,
-  "homepage": "https://github.com/penjj/qrcode-tiny",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/penjj/qrcode-tiny.git"
+    "url": "git+https://github.com/penjj/qrcode-tiny.git",
+    "directory": "packages/vue"
   },
   "exports": {
     ".": {
@@ -32,6 +32,6 @@
   },
   "dependencies": {
     "qrcode-tiny": "workspace:*",
-    "vue": "^3.4.4"
+    "vue": "^3.5.13"
   }
 }
